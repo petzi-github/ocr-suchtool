@@ -1,0 +1,38 @@
+# ---------- Python ----------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+
+# ---------- IDE / Editor ----------
+.vscode/
+
+# ---------- OS-spezifisch ----------
+.DS_Store
+Thumbs.db
+
+# ---------- Exe, Build & Dist ----------
+/dist/
+/build/
+*.exe
+
+# ---------- Tesseract & Poppler ----------
+/Tesseract-OCR/
+/poppler/
+
+# ---------- Temporäre Dateien ----------
+*.tmp
+temp_*
+
+# ---------- Word-Ausgaben / generierte Dokumente ----------
+*.docx
+
+# ---------- Logs ----------
+*.log
+
+# ---------- Sonstiges / Backup ----------
+/archiv/
+/logs/
+/lookup/
+/sicherung/

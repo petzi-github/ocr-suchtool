@@ -1,0 +1,63 @@
+# OCR Suchtool
+
+**Version:** 0.1  
+**Beschreibung:** Ein einfaches OCR-Tool für Windows, mit dem Texte in PDFs und Bildern erkannt und nach benutzerdefinierten Suchbegriffen durchsucht werden können. Ergebnisse können in Word-Dokumenten gespeichert werden.  
+
+---
+
+## Funktionen
+
+- OCR für **PDFs** und **Bilddateien** (.png, .jpg, .jpeg, .tif, .tiff, .bmp)  
+- Unterstützung mehrerer deutscher Sprachmodelle:
+  - Deutsch (modern)
+  - Deutsch (Fraktur)
+  - Deutsch (Fraktur alt)
+  - Deutsch (Mischschrift)
+- **Kombinierte Suchfunktion für alle Sprachmodelle:** derzeit deaktiviert  
+- Ausgabe als Word-Dokument:
+  - Option, den kompletten Scan als `.docx` zu speichern  
+  - Treffer können optional farbig markiert werden (nur bei vollständigem Word-Dokument)  
+- Drag & Drop für PDFs und Bilder  
+- Statusanzeige und Fortschrittsbalken während der Verarbeitung  
+- Abbrechen der OCR jederzeit möglich  
+
+---
+
+## Installation
+
+1. Python 3.11+ installieren  
+2. Virtuelle Umgebung erstellen (optional, empfohlen):
+   python -m venv venv
+
+4. Abhängigkeiten installieren:
+    pip install -r requirements.txt
+
+5. Tesseract OCR und Poppler installieren:
+    Tesseract: https://github.com/tesseract-ocr/tesseract
+    Poppler: https://github.com/oschwartz10612/poppler-windows
+
+    Hinweis: Die Pfade zu Tesseract und Poppler werden automatisch in der Anwendung angepasst, wenn die EXE mit PyInstaller erstellt wird.
+
+## Verwendung
+1. Anwendung starten:
+    python gui.py
+
+2. Dateien per Drag & Drop hinzufügen
+3. Suchbegriffe eingeben (je Zeile ein Wort)
+4. Sprache auswählen
+5. Optional Bildoptimierung auswählen
+6. Ausgabeordner wählen
+7. „OCR starten“ klicken
+
+Nach Abschluss fragt die Anwendung, ob die Trefferliste geöffnet werden soll. Das vollständige Word-Dokument bleibt in jedem Fall im Ausgabeordner gespeichert.
+
+## Hinweise
+Temporäre Dateien werden automatisch gelöscht.
+
+Fehler während der Bildoptimierung werden in der Statusanzeige protokolliert; die Anwendung stürzt nicht ab.
+
+Die kombinierte Sprachfunktion ist momentan deaktiviert und wird in zukünftigen Versionen wieder aktiviert.
+
+## Lizenz
+Dieses Projekt ist frei verfügbar für private und gewerbliche Nutzung.
+Der Name „OCR Suchtool“ ist beschreibend und sollte keine Markenrechte verletzen.
