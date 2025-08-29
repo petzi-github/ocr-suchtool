@@ -59,5 +59,8 @@ Fehler während der Bildoptimierung werden in der Statusanzeige protokolliert; d
 Die kombinierte Sprachfunktion ist momentan deaktiviert und wird in zukünftigen Versionen wieder aktiviert.
 
 ## Lizenz
-Dieses Projekt ist frei verfügbar für private und gewerbliche Nutzung.
+
+Dieses Projekt steht unter der [Apache-2.0-Lizenz](LICENSE).  
+Das bedeutet, dass die Software sowohl privat als auch gewerblich genutzt, verändert und weitergegeben werden darf, solange die Lizenzbedingungen eingehalten werden (z. B. Namensnennung und Beibehaltung des Lizenztexts).
+
 Der Name „OCR Suchtool“ ist beschreibend und sollte keine Markenrechte verletzen.
